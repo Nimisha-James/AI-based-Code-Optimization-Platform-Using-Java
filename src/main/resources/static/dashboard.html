@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Code Complexity Analyzer</h2>
+        <div class="editor-container">
+            <textarea id="code-editor" placeholder="Enter your Java code here...">class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}</textarea>
+            <div class="button-group">
+                <button id="compile-btn">Compile</button>
+                <button id="analyze-btn">Analyze</button>
+                <button id="optimize-btn">Optimize</button>
+            </div>
+            <div class="results">
+                <h3>Results:</h3>
+				<div id="output">
+				    <div class="code-block"><pre>Results will appear here...</pre></div>
+				</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+O(n)
+
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    sum += i;
+    operationCount++;
+}
+
+___________________________________________
+
+O(n^2)
+
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        sum += i + j;
+        operationCount++;
+    }
+}
+
+
+___________________________________________
+
+O(n^3)
+
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        for (int k = 0; k < n; k++) {
+            sum += i + j + k;
+            operationCount++;
+        }
+    }
+}
+
+____________________________________________
+
+
+O(log n)
+
+int steps = 0;
+int power = 1;
+while (power < n) {
+    power *= 2;
+    steps++;
+    operationCount++;
+}
+
+
+_______________________________________________
+
+
+O(2^n)
+
+int count = 0;
+for (int i = 0; i < (1 << n); i++) {
+    count++;
+    operationCount++;
+}
+
+
+_____________________________________________
+
+ COMPILER CHECK
+ 
+Error--------- 
+public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+
+        System.out.println("This line has a typo!")
+    }
+}
+
+
+Correct--------
+public class MyClass {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        System.out.println("This line is correct.");
+    }
+}
+
+
+_____________________________________________________
+
+
+
+
+OPTIMIZATION CHECK
+
+
+public class SumCalculator {
+    public static void main(String[] args) {
+        int sum = 0;
+
+        // Inefficient loop: recalculates square in each iteration
+        for (int i = 1; i <= 100; i++) {
+            sum += i * i;
+        }
+
+        System.out.println("Sum of squares from 1 to 100: " + sum);
+    }
+}
+
+
+____________________________________________________
+
+public class LCMBrute {
+    public static void main(String[] args) {
+        int a = 15, b = 20;
+        int lcm = Math.max(a, b);
+
+        while (true) {
+            if (lcm % a == 0 && lcm % b == 0) {
+                System.out.println("LCM: " + lcm);
+                break;
+            }
+            lcm++;
+        }
+    }
+}
