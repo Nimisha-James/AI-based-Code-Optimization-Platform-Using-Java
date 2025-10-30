@@ -24,7 +24,7 @@ public class CodeOptimizationService {
     private TimeComplexityService timeComplexityService;
 
     // ✅ Use Gemini 2.0 Pro Experimental model
-    private static final String GEMINI_API_KEY = "AIzaSyDquw-wRq3fN8Xnms_Lpd6UKRaK0UB_NxA";
+    private static final String GEMINI_API_KEY = "";
     private static final String GEMINI_ENDPOINT =
             "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-pro-exp:generateContent?key=" + GEMINI_API_KEY;
 
